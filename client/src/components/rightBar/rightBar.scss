@@ -1,0 +1,107 @@
+@import "../../style.scss";
+
+.rightBar {
+  @include themify($themes) {
+    flex: 3.1;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: themed("bgSoft");
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    @include mobile{
+      display: none;
+    }
+    @include tablet{
+      display: none;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .container {
+      padding: 20px;
+
+      .item {
+        -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+        -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: themed("bg");
+
+        span {
+          color: gray;
+          font-size: 14px;
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 20px 0px;
+
+          .userInfo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+
+            .online {
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              background-color: limegreen;
+              position: absolute;
+              top: 0;
+              left: 30px;
+            }
+
+            p {
+              color: themed("textColorSoft");
+              font-size: 13px;
+            }
+
+            span {
+              font-size: 14px;
+              font-weight: 500;
+              color: themed("textColor");
+            }
+          }
+
+          .buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            button {
+              border: none;
+              padding: 5px;
+              color: themed("buttonText");
+              cursor: pointer;
+
+              &:first-child {
+                border-radius: 5px;
+                background-color: themed("button1");
+              }
+
+              &:last-child {
+                border-radius: 5px;
+                background-color: #e96c68;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
