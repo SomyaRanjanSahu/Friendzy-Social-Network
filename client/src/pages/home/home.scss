@@ -5,6 +5,7 @@
     padding: 20px 70px;
     background-color: themed("bgSoft");
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
 
     @include mobile {
       padding: 10px;
