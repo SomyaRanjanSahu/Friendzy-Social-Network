@@ -17,13 +17,17 @@ const Navbar = () => {
     const { toggle, darkMode } = useContext(DarkModeContext);
     const { currentUser } = useContext(AuthContext);
 
+    const handleClick = (e) => {
+        window.location.href = "/";
+    };
+
     return (
         <div className="navbar">
             <div className="left">
                 <Link to="/" style={{ textDecoration: "none" }}>
                     <span>Friendzy</span>
                 </Link>
-                <HomeOutlinedIcon />
+                <HomeOutlinedIcon className="home-icon" onClick={handleClick}/>
                 {darkMode ? (
                     <WbSunnyOutlinedIcon onClick={toggle} />
                 ) : (
@@ -31,7 +35,7 @@ const Navbar = () => {
                 )}
                 <GridViewOutlinedIcon />
                 <div className="search">
-                    <SearchOutlinedIcon />
+                    <SearchOutlinedIcon fontSize="small" />
                     <input type="text" placeholder="Search..." />
                 </div>
             </div>

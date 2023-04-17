@@ -10,7 +10,6 @@ const Home = () => {
             <Share />
             <Posts />
         </div>
-
     )
 }
 
