@@ -16,7 +16,7 @@
     .wrapper {
       margin: auto;
       width: 40%;
-      height: 70%;
+      height: 100%;
       background-color: themed("bg");
       padding: 50px;
       z-index: 999;
@@ -94,20 +94,22 @@
           border: none;
           padding: 10px;
           cursor: pointer;
-          color: white;
-          background-color: #5271ff;
+          color: themed("buttonText");
+          background-color: themed("button1");
+          border-radius: 20px;
         }
       }
 
       .close {
         position: absolute;
-        top: 10px;
+        top: 15px;
         right: 20px;
         border: none;
         background-color: #f0544f;
-        padding: 5px;
+        padding: 8px;
         cursor: pointer;
         color: white;
+        border-radius: 8px;
       }
     }
   }

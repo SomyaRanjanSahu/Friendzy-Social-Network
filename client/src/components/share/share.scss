@@ -85,11 +85,12 @@
         .right {
           button {
             border: none;
-            padding: 5px;
-            color: white;
+            padding: 7px;
+            color: themed("buttonText");
             cursor: pointer;
-            background-color: #5271ff;
+            background-color: themed("button1");
             border-radius: 3px;
+            border-radius: 8px;
           }
         }
       }

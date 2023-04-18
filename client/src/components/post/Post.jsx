@@ -64,7 +64,7 @@ const Post = ({ post }) => {
       <div className="container">
         <div className="user">
           <div className="userInfo">
-            <img src={"/upload/" + post.profilePic} alt="" />
+            <img src={post.profilePic} alt="" />
             <div className="details">
               <Link
                 to={`/profile/${post.userId}`}
@@ -77,12 +77,12 @@ const Post = ({ post }) => {
           </div>
           <MoreHorizIcon onClick={() => setMenuOpen(!menuOpen)} />
           {menuOpen && post.userId === currentUser.id && (
-            <button onClick={handleDelete}>delete</button>
+            <button onClick={handleDelete}>Delete</button>
           )}
         </div>
         <div className="content">
           <p>{post.desc}</p>
-          <img src={"/upload/" + post.img} alt="" />
+          <img src={post.img} alt="" />
         </div>
         <div className="info">
           <div className="item">

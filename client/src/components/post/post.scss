@@ -38,6 +38,7 @@
                         }
 
                         .date {
+                            margin-top: 5px;
                             font-size: 12px;
                         }
                     }
@@ -45,13 +46,14 @@
 
                 button {
                     position: absolute;
-                    top: 30px;
+                    top: 45px;
                     right: 0;
                     border: none;
                     background-color: #f0544f;
-                    padding: 5px;
+                    padding: 8px;
                     cursor: pointer;
                     color: white;
+                    border-radius: 10px;
                 }
             }
 
