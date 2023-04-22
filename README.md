@@ -3,5 +3,5 @@
 ![](https://img.shields.io/badge/Level-Advance-red.svg)
 ![](https://img.shields.io/badge/Status-Complete-green.svg) 
 
-# Friendzy
+<h1 align="center">Friendzy</h1>
 A social network made using React, Node.js, and MySQL.
