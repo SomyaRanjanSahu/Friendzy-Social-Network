@@ -4,4 +4,4 @@
 ![](https://img.shields.io/badge/Status-Complete-green.svg) 
 
 <h1 align="center">Friendzy</h1>
-A social network made using React, Node.js, and MySQL.
+<p align="center">A social network made using React, Node.js, and MySQL.</p>
