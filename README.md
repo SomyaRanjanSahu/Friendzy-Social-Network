@@ -5,3 +5,11 @@
 
 <h1 align="center">Friendzy</h1>
 <p align="center">A social network made using React, Node.js, and MySQL.</p>
+
+<h2> Tech Stack : </h2>
+<ol>
+  <li>React</li>
+  <li>Node.js</li>
+  <li>Express.js</li>
+  <li>MySQL</li>
+</ol>
